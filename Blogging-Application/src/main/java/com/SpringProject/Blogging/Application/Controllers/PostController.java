@@ -1,17 +1,25 @@
 
 package com.SpringProject.Blogging.Application.Controllers;
 
+
 import com.SpringProject.Blogging.Application.Config.AppConstants;
-import com.SpringProject.Blogging.Application.Models.Post;
 import com.SpringProject.Blogging.Application.Payloads.PostDTO;
 import com.SpringProject.Blogging.Application.Payloads.PostResponse;
-import com.SpringProject.Blogging.Application.Repositories.PostRepo;
+import com.SpringProject.Blogging.Application.Services.FileService;
 import com.SpringProject.Blogging.Application.Services.PostService;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 @RestController
@@ -20,6 +28,10 @@ public class PostController {
 
     @Autowired
     private PostService postService;
+    @Autowired
+    private FileService fileService;
+    @Value("${project.image}")
+    private String path;
 
     // Create post
     @PostMapping("/user/{userId}/category/{categoryId}")
@@ -96,4 +108,15 @@ public class PostController {
         List<PostDTO> result=this.postService.searchPosts(keywords);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
+    // post image upload
+    @PostMapping("/image/upload/{postId}")
+    public ResponseEntity<PostDTO> uploadImage(@RequestParam("image")MultipartFile image, @PathVariable int postId) throws IOException{
+        PostDTO postDTO=this.postService.getPostById(postId);
+        String fileName=this.fileService.uploadImage(path,image);
+
+       postDTO.setImageName(fileName);
+       PostDTO updatePost=this.postService.updatePost(postDTO,postId);
+       return new ResponseEntity<PostDTO>(updatePost,HttpStatus.OK);
+    }
+
 }
