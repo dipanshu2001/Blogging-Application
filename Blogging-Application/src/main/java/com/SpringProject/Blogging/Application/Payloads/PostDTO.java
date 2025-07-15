@@ -3,6 +3,7 @@ package com.SpringProject.Blogging.Application.Payloads;
 import com.SpringProject.Blogging.Application.Models.Category;
 import com.SpringProject.Blogging.Application.Models.Comments;
 import com.SpringProject.Blogging.Application.Models.User;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,6 +13,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 

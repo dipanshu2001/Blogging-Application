@@ -5,10 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aedebf9-5c78-4923-96f7-2fc799a8fa56" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_api_0_11_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_impl_0_11_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_jackson_0_11_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_6_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_6_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_6_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_6_5_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/BloggingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/BloggingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/CategoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Models/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Models/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/PostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/PostDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/PostResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/PostResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Repositories/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Repositories/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/PostServiceImplementation/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/PostServiceImplementation/PostServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +55,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2xthLiOvBYcE5nO0hCHRvzsaDMb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,11 +67,12 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Vikas Joshi/Downloads/Blogging Application&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -63,5 +85,28 @@
       <updated>1748763223943</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
