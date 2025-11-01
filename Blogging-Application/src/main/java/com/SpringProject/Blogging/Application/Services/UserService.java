@@ -6,6 +6,7 @@ import com.SpringProject.Blogging.Application.Payloads.UserDTO;
 import java.util.List;
 
 public interface UserService {
+    UserDTO registerNewUser(UserDTO user);
     UserDTO createUser(UserDTO user);
 
     UserDTO updateUser(UserDTO user, int user_Id);
@@ -15,4 +16,5 @@ public interface UserService {
     List<UserDTO> getAllUsers();
 
     void deleteUser(int user_Id);
+    UserDTO userToDTO(User user);
 }

@@ -19,7 +19,13 @@ public class BloggingApplication implements CommandLineRunner {
 
 	@Bean
 	public ModelMapper modelMapper() {
-		return new ModelMapper();
+		ModelMapper mapper= new ModelMapper();
+		mapper.typeMap(
+				com.SpringProject.Blogging.Application.Models.User.class,
+				com.SpringProject.Blogging.Application.Payloads.UserDTO.class
+		).addMappings(m -> m.skip(com.SpringProject.Blogging.Application.Payloads.UserDTO::setRoles));
+
+		return mapper;
 	}
 
 	@Override

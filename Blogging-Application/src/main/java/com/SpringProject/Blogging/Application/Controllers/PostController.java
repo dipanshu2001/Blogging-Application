@@ -1,25 +1,19 @@
-
 package com.SpringProject.Blogging.Application.Controllers;
-
 
 import com.SpringProject.Blogging.Application.Config.AppConstants;
 import com.SpringProject.Blogging.Application.Payloads.PostDTO;
 import com.SpringProject.Blogging.Application.Payloads.PostResponse;
 import com.SpringProject.Blogging.Application.Services.FileService;
 import com.SpringProject.Blogging.Application.Services.PostService;
-import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.StreamUtils;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 
 @RestController
@@ -34,6 +28,7 @@ public class PostController {
     private String path;
 
     // Create post
+    @PreAuthorize("hasAnyRole('AUTHOR','ADMIN')")
     @PostMapping("/user/{userId}/category/{categoryId}")
     public ResponseEntity<PostDTO> createPost(
             @RequestBody PostDTO postDTO,
@@ -45,6 +40,7 @@ public class PostController {
     }
 
     // Get all posts with pagination and sorting
+    @PreAuthorize("isAuthenticated()")
     @GetMapping
     public ResponseEntity<PostResponse> getAllPosts(
             @RequestParam(value = "pageNumber", defaultValue = AppConstants.DEFAULT_PAGE_NUMBER, required = false) int pageNumber,
@@ -57,6 +53,7 @@ public class PostController {
     }
 
     // Get posts by category
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/category/{categoryId}")
     public ResponseEntity<PostResponse> getPostsByCategory(
             @PathVariable int categoryId,
@@ -70,6 +67,7 @@ public class PostController {
     }
 
     // Get posts by user
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/user/{userId}")
     public ResponseEntity<PostResponse> getPostsByUser(
             @PathVariable int userId,
@@ -83,6 +81,7 @@ public class PostController {
     }
 
     // Update post
+    @PreAuthorize("hasAnyRole('AUTHOR','ADMIN')")
     @PutMapping("/{postId}")
     public ResponseEntity<PostDTO> updatePost(@RequestBody PostDTO postDTO, @PathVariable int postId) {
         PostDTO updatedPost = postService.updatePost(postDTO, postId);
@@ -90,6 +89,7 @@ public class PostController {
     }
 
     // Delete post
+    @PreAuthorize("hasAnyRole('AUTHOR','ADMIN')")
     @DeleteMapping("/{postId}")
     public ResponseEntity<?> deletePost(@PathVariable int postId) {
         postService.deletePost(postId);
@@ -97,18 +97,21 @@ public class PostController {
     }
 
     // Get post by id
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/{postId}")
     public ResponseEntity<PostDTO> getPostById(@PathVariable int postId) {
         PostDTO postDTO = postService.getPostById(postId);
         return ResponseEntity.ok(postDTO);
     }
     // Searching
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/search/{keywords}")
     public ResponseEntity<List<PostDTO>> searchPostByTitle(@PathVariable("keywords")String keywords){
         List<PostDTO> result=this.postService.searchPosts(keywords);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
     // post image upload
+    @PreAuthorize("hasAnyRole('AUTHOR','ADMIN')")
     @PostMapping("/image/upload/{postId}")
     public ResponseEntity<PostDTO> uploadImage(@RequestParam("image")MultipartFile image, @PathVariable int postId) throws IOException{
         PostDTO postDTO=this.postService.getPostById(postId);

@@ -5,28 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aedebf9-5c78-4923-96f7-2fc799a8fa56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_api_0_11_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_impl_0_11_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_jackson_0_11_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_3_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_6_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_6_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_6_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_6_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_jakarta_2_2_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_jakarta_2_2_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_jakarta_2_2_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_17_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jspecify_jspecify_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_starter_common_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_starter_webmvc_api_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_starter_webmvc_ui_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_swagger_ui_5_18_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_webjars_locator_lite_1_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/BloggingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/BloggingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Config/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Config/AppConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/PostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Exceptions/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Exceptions/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Models/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/PostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/PostDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/PostResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/PostResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/JwtAuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/JwtAuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Payloads/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Repositories/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Repositories/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Security/CustomUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Security/CustomUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Security/JwtTokenHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Security/JwtTokenHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CategoryServiceImplementation/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CategoryServiceImplementation/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CommentServiceImplementation/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/CommentServiceImplementation/CommentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/PostServiceImplementation/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/PostServiceImplementation/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/UserServiceImplimentation/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/java/com/SpringProject/Blogging/Application/Services/UserServiceImplimentation/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blogging-Application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Blogging-Application/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +89,18 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="BloggingApplication" type="Application" factoryName="Application">
+      <envs>
+        <env name="JWT_SECRET" value="hT8b24Uvjn23Fvx9yOPKJmE3LkTqvL67xALsg89wHkz7vMbL1yd2vKeFDyPJoHYK " />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.SpringProject.Blogging.Application.BloggingApplication" />
+      <module name="Blogging-Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

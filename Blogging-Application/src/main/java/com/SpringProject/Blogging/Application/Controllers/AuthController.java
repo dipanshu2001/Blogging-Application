@@ -2,7 +2,9 @@ package com.SpringProject.Blogging.Application.Controllers;
 
 import com.SpringProject.Blogging.Application.Payloads.JwtAuthRequest;
 import com.SpringProject.Blogging.Application.Payloads.JwtAuthResponse;
+import com.SpringProject.Blogging.Application.Payloads.UserDTO;
 import com.SpringProject.Blogging.Application.Security.JwtTokenHelper;
+import com.SpringProject.Blogging.Application.Services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,12 +22,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v1/auth")
 public class AuthController {
-    @Autowired
-    private JwtTokenHelper jwtTokenHelper;
-    @Autowired
-    private UserDetailsService userDetailsService;
-    @Autowired
-    private AuthenticationManager authenticationManager;
+    @Autowired private JwtTokenHelper jwtTokenHelper;
+    @Autowired private UserDetailsService userDetailsService;
+    @Autowired private AuthenticationManager authenticationManager;
+    @Autowired private UserService userService;
     @PostMapping("/login")
     public ResponseEntity<?> createToken(
             @RequestBody JwtAuthRequest request
@@ -41,6 +41,8 @@ public class AuthController {
         response.setToken(token);
         return new ResponseEntity<JwtAuthResponse>(response, HttpStatus.OK);
     }
+
+
     private void authenticate(String emailId,String password){
         UsernamePasswordAuthenticationToken authenticationToken=new UsernamePasswordAuthenticationToken(emailId,password);
         try {
