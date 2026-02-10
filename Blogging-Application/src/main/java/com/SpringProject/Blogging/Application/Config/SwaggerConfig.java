@@ -2,27 +2,46 @@ package com.SpringProject.Blogging.Application.Config;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
+import io.swagger.v3.oas.annotations.info.Contact;
 import io.swagger.v3.oas.annotations.info.Info;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.info.License;
+import io.swagger.v3.oas.annotations.servers.Server;
 import io.swagger.v3.oas.annotations.security.SecurityScheme;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @OpenAPIDefinition(
         info = @Info(
-                title = "Blogging Application API",
+                title = "Blogging Platform REST API",
                 version = "1.0",
-                description = "Documentation for Blogging Application Backend (Spring Boot)"
+                description = "REST API documentation for Blogging Application with JWT Authentication & Role-Based Authorization.",
+                contact = @Contact(
+                        name = "Dipanshu Joshi",
+                        email = "joshidipanshu71@gmail.com"
+                ),
+                license = @License(
+                        name = "Apache 2.0",
+                        url = "https://www.apache.org/licenses/LICENSE-2.0.html"
+                )
         ),
-        security = {
-                @SecurityRequirement(name = "bearerAuth")
-        }
+        servers = {
+                @Server(
+                        url = "http://localhost:8080",
+                        description = "Local Development Server"
+                )
+        },
+        security = @SecurityRequirement(name = "bearerAuth")
 )
 @SecurityScheme(
         name = "bearerAuth",
         type = SecuritySchemeType.HTTP,
         scheme = "bearer",
-        bearerFormat = "JWT"
+        bearerFormat = "JWT",
+        description = "Enter JWT token without the `Bearer ` prefix"
 )
 public class SwaggerConfig {
+
 }
+

@@ -1,5 +1,6 @@
 package com.SpringProject.Blogging.Application.Payloads;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,11 +12,18 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+@Schema(description = "Paginated posts response")
 public class PostResponse {
+    @Schema(description = "List of posts")
     private List<PostDTO> content;
+    @Schema(description = "Current page number",example = "0")
     private int pageNumber;
+    @Schema(description = "Number of elements on page", example = "5")
     private int pageSize;
+    @Schema(description = "Total elements", example = "20")
     private long totalElements;
+    @Schema(description = "Total pages", example = "4")
     private int totalPages;
+    @Schema(description = "Is last page", example = "false")
     private boolean lastPage;
 }

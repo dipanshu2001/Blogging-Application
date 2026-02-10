@@ -8,7 +8,7 @@ import lombok.Setter;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
-
+import io.swagger.v3.oas.annotations.media.Schema;
 @Entity
 @NoArgsConstructor
 @Getter
